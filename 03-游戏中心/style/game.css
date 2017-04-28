@@ -1,0 +1,320 @@
+#main {
+    width: 100%;
+}
+.grid {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*中间小轮播图部分*/
+.banner {
+    height: 345px;
+    margin: 30px 0 0 0;
+    border-bottom: 2px solid #e1e1e1;
+}
+.banner-slideshow {
+    position: relative;
+    float: left;
+    width: 700px;
+    height: 345px;
+    overflow: hidden;
+}
+.banner-slideshow .slides {
+    width: 18200px;
+    position: absolute;
+}
+.slides li {
+    float: left;
+    width: 700px;
+    height: 345px;
+}
+
+/*轮播图下方圆形按钮部分*/
+.slides-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 700px;
+    background: url("../images/png.png");
+}
+.slides-pagination li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 10px 0 0 10px;
+    background: url("../images/icon.png") -20px -40px no-repeat;
+    
+}
+.slides-pagination li.selected {
+    background: url("../images/icon.png") 0 -40px no-repeat;
+}
+.slides-pagination li a {
+    width: 20px;
+    height: 20px;
+    display: block;
+    text-indent: -9999px;
+}
+
+/*图片右侧小三角*/
+.trigle {
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-right-color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 0;
+}
+
+/*轮播图右侧文字说明部分*/
+.banner-dec-box {
+    float: right;
+    width: 300px;
+}
+.banner-dec-box .selected {
+    display: block;
+}
+.banner-dec {
+    float: right;
+    margin-right: 30px;
+    width: 240px;
+    height: 345px;
+    color: #707070;
+    background-color: #FFFFFF;
+    display: none;
+}
+.banner-dec h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding: 20px 0 10px;
+    border-bottom: 2px solid #2cbdf0;
+}
+.banner-dec p {
+    height: 168px;
+    font-size: 16px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.banner-dec a {
+    float: right;
+    font-size: 18px;
+    color: #757575;
+    border: 2px solid #CBCBCB;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+.banner-dec a:hover {
+    color: #2cbdf0;
+    text-decoration: none;
+    border-color: #2cbdf0;
+}
+
+/*游戏列表*/
+.game {
+    margin-top: 30px;
+    padding-bottom: 70px;
+    background: #fff;
+}
+.gamebox-list {
+    min-height: 300px;
+    border-top: 1px solid #D2D2D2;
+    border-bottom: 1px solid #D2D2D2;
+    /*列表元素过多隐藏*/
+    overflow: hidden;
+}
+.gamebox {
+    float: left;
+    border-left: 1px solid #D2D2D2;
+    /*始终和最高的等高*/
+    padding-bottom: 100000px;
+    margin-bottom: -100000px;
+}
+.gamebox h4 {
+    font-size: 16px;
+    line-height: 35px;
+    color: #333;
+    background-color: #F0F0F0;
+}
+.gamebox h4 span {
+    margin-right: 5px;
+    border-left: 5px solid #2cbdf0;
+}
+.gamebox dl {
+    padding: 5px 12px;
+    white-space: nowrap;
+}
+.gamebox dl dt {
+    font-size: 14px;
+    line-height: 25px;
+    color: #F0882C;
+}
+.gamebox dl a {
+    font-size: 13px;
+    line-height: 25px;
+    color: #707070;
+}
+.gamebox dl a:hover {
+    color: #2cbdf0;
+}
+/*游戏图标*/
+span.gameicon {
+    width: 12px;
+    height: 12px;
+    margin: 7px 0 0 5px;
+    display: inline-block;
+    vertical-align: top;
+    background: url("../images/icon.png") no-repeat;
+}
+span.newgame {
+    background-position: -24px -24px;
+}
+span.hotgame {
+    background-position: -4px -24px;
+}
+.gamebox1 dl {
+    float: left;
+}
+.gamebox1 dl:last-child {
+    width: 413px;
+}
+.gamebox1 dl:last-child dd {
+    width: 49%;
+    float: left;
+}
+.gamebox2 {
+    width: 160px;
+}
+.gamebox3 {
+    width: 150px;
+    border-right: 1px solid #D2D2D2;
+}
+
+/*更多游戏部分*/
+.game-more {
+    float: right;
+    width: 1em;
+    min-height: 300px;
+    padding: 0 17px;
+    font-size: 16px;
+    color: #F0F0F0;
+    cursor: pointer;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    background-color: #2cbdf0;
+    padding-bottom: 100000px;
+    margin-bottom: -100000px;
+}
+.game-more:hover {
+    color: #F0F0F0;
+}
+.game-more span {
+    display: inline-block;
+    margin-top: 100px;
+}
+
+
+/*底部导航*/
+.nav-notice {
+    margin-left: -8px;
+    margin-top: 25px;
+}
+.nav-notice li {
+    float: left;
+    width: 150px;
+    margin: 0 8px 8px;
+    background: #F0F0F0;
+}
+.nav-notice li a {
+    display: block;
+    font-size: 20px;
+    line-height: 90px;
+    text-align: center;
+    color: #333;
+    border: 1px solid #cbcbcb;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.nav-notice li a:hover {
+    color: #fff;
+    background: #2cbdf0;
+    border: none;
+    text-decoration: none;
+}
+
+
+/*footer页面尾部*/
+#footer {
+    margin-top: 30px;
+}
+.footer-box {
+    width: 1000px;
+    height: 140px;
+    margin: 0 auto;
+}
+.footer-box a img {
+    width: inherit;
+}
+.footer-logo,
+.culture-logo,
+.footer-text {
+    float: left;
+}
+/*footer logo*/
+.footer-logo {
+    width: 94px;
+    padding-right: 20px;
+    border-right: 1px solid #EEEEEE;
+}
+.footer-logo a {
+    display: inline-block;
+    width: 94px;
+    height: 42px;
+}
+/*culture logo*/
+.culture-logo img {
+    width: 34px;
+    height: 34px;
+    margin: 4px 0 0 20px;
+}
+/*footer-text*/
+.footer-text {
+    float: right;
+    padding-right: 80px;
+    color: #949494;
+}
+.footer-text a {
+    color: #00a1d6;
+}
+.footer-text a:hover {
+    color: #0091c1;
+    text-decoration: none;
+}
+/*点击*/
+.gototop {
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -650px; /*始终在grid左侧*/
+    background: url("../images/ewm.png") 0 0 no-repeat;
+    -webkit-background-size: 200% 100%;
+    background-size: 200% 100%;
+}
+
+
+
+
+
+
+
+
+

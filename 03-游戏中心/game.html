@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <title>bilibili游戏中心</title>
     <link rel="stylesheet" href="style/base.css"/>
+    <link rel="stylesheet" href="style/game.css"/>
 </head>
 <body>
     <div id="main">
         <div class="grid">
-            <div class="banner">
+            <div class="banner clearfix">
                 <div class="banner-slideshow">
                     <div class="slidebox">
                         <ul class="slides">
                             <li><a href="javascript:;"><img src="images/slide2_1.jpg" alt=""/></a></li>
                             <li><a href="javascript:;"><img src="images/slide2_2.jpg" alt=""/></a></li>
-                            <li><a href="javascript:;"><img src="images/slide2_3.jpg" alt=""/></a></li>
+                            <li><a href="javascript:;"><img src="images/slide2_3.png" alt=""/></a></li>
                             <li><a href="javascript:;"><img src="images/slide2_4.jpg" alt=""/></a></li>
                             <li><a href="javascript:;"><img src="images/slide2_5.jpg" alt=""/></a></li>
                             <li><a href="javascript:;"><img src="images/slide2_6.jpg" alt=""/></a></li>
@@ -26,7 +27,7 @@
                             <li><a href="javascript:;"><img src="images/slide2_12.jpg" alt=""/></a></li>
                             <li><a href="javascript:;"><img src="images/slide2_13.jpg" alt=""/></a></li>
                             <li><a href="javascript:;"><img src="images/slide2_14.jpg" alt=""/></a></li>
-                            <li><a href="javascript:;"><img src="images/slide2_15.jpg" alt=""/></a></li>
+                            <li><a href="javascript:;"><img src="images/slide2_15.png" alt=""/></a></li>
                             <li><a href="javascript:;"><img src="images/slide2_16.jpg" alt=""/></a></li>
                             <li><a href="javascript:;"><img src="images/slide2_17.jpg" alt=""/></a></li>
                             <li><a href="javascript:;"><img src="images/slide2_18.jpg" alt=""/></a></li>
@@ -41,7 +42,7 @@
                         </ul>
                     </div>
                     <ul class="slides-pagination">
-                        <li><a href="javascript:;">1</a></li>
+                        <li class="selected"><a href="javascript:;">1</a></li>
                         <li><a href="javascript:;">2</a></li>
                         <li><a href="javascript:;">3</a></li>
                         <li><a href="javascript:;">4</a></li>
@@ -68,9 +69,10 @@
                         <li><a href="javascript:;">25</a></li>
                         <li><a href="javascript:;">26</a></li>
                     </ul>
+                    <div class="trigle"></div>
                 </div>
-                <div class="banner-text">
-                    <div class="banner-dec">
+                <div class="banner-dec-box">
+                    <div class="banner-dec selected">
                         <h3>北海神话大战</h3>
                         <p>第五特异点 正式开始</p>
                         <a href="javascript:;" target="_blank">查看详情</a>
@@ -203,7 +205,112 @@
                 </div>
             </div>
         </div>
+        <div class="game clearfix">
+            <div class="grid">
+                <div class="gamebox-list">
+                    <div class="gamebox gamebox1">
+                        <h4><span></span>手机游戏</h4>
+                        <dl>
+                            <dt>新游推荐</dt>
+                            <dd><a target="_blank" href="javascript:;">妃十三学园</a><span class="newgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">魔法禁书目录</a></dd>
+                            <dd><a target="_blank" href="javascript:;">碧蓝航线</a><span class="newgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">神代梦华谭</a><span class="newgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">仙剑奇侠传幻璃镜</a><span class="newgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">妖精的衣橱</a><span class="newgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">萌王EX</a><span class="newgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">叛逆性百万亚瑟王</a><span class="newgame gameicon"></span></dd>
+                        </dl>
+                        <dl>
+                            <dt>热门推荐</dt>
+                            <dd><a target="_blank" href="javascript:;">命运-冠位指定（Fate/GO）</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">刀剑乱舞</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">ICHU偶像进行曲</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">EVA:破晓</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">螺旋境界线</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">阴阳师</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">少女前线</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">战舞幻想曲</a></dd>
+                            <dd><a target="_blank" href="javascript:;">天天打波利</a></dd>
+                            <dd><a target="_blank" href="javascript:;">偶像梦幻祭</a></dd>
+                            <dd><a target="_blank" href="javascript:;">梦王国与沉睡的100王子</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">崩坏学园2 </a></dd>
+                            <dd><a target="_blank" href="javascript:;">战场双马尾</a></dd>
+                            <dd><a target="_blank" href="javascript:;">克鲁赛德战记</a></dd>
+                            <dd><a target="_blank" href="javascript:;">乖离性百万亚瑟王</a></dd>
+                            <dd><a target="_blank" href="javascript:;">刀剑神域黑衣剑士</a></dd>
+                            <dd><a target="_blank" href="javascript:;">魔法学园</a></dd>
+                            <dd><a target="_blank" href="javascript:;">三国罗曼史 </a></dd>
+                            <dd><a target="_blank" href="javascript:;">幻影纹章</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">Zion载音</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">崩坏3</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">影之刃2</a></dd>
+                            <dd><a target="_blank" href="javascript:;">造物法则</a></dd>
+                            <dd><a target="_blank" href="javascript:;">诺诺来自异世界</a></dd>
+                            <dd><a target="_blank" href="javascript:;">那兔之大国梦</a></dd>
+                            <dd><a target="_blank" href="javascript:;">魔法少女小圆</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">幻游猎人</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">少女咖啡枪</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">如果的世界 </a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">妖刀少女异闻录</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">剑侠世界</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">装甲联盟</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">大航海之路</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">皇牌机娘</a><span class="hotgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">暴风战舰</a></dd>
+                        </dl>
+                    </div>
+                    <div class="gamebox gamebox2">
+                        <h4><span></span>网页游戏</h4>
+                        <dl>
+                            <dt></dt>
+                            <dd><a target="_blank" href="javascript:;">刀剑乱舞</a><span class="newgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">神仙道2</a><span class="newgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">射击少女</a><span class="newgame gameicon"></span></dd>
+                            <dd><a target="_blank" href="javascript:;">像素骑士团</a></dd>
+                        </dl>
+                    </div>
+                    <div class="gamebox gamebox3">
+                        <h4><span></span>客户端游戏</h4>
+                        <dl>
+                            <dt></dt>
+                            <dd><a target="_blank" href="javascript:;">机动战士敢达OL</a><span class="newgame gameicon"></span></dd>
+                        </dl>
+                    </div>
+                    <a class="game-more" href="javascript:;" target="_blank"><span>查看图片完整版</span></a>
+                </div>
+            </div>
+            </div>
+        <div class="grid">
+            <div class="nav-notice">
+                <ul class="clearfix">
+                    <li><a target="_blank" href="javascript:;">建议反馈</a></li>
+                    <li><a target="_blank" href="javascript:;">新浪微博</a></li>
+                    <li><a target="_blank" href="javascript:;">视频站</a></li>
+                    <li><a target="_blank" href="javascript:;">壁纸站</a></li>
+                    <li><a target="_blank" href="javascript:;">招聘启事</a></li>
+                    <li><a target="_blank" href="javascript:;">客服娘</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-
+    <div id="footer">
+        <div class="footer-box clearfix">
+            <div class="footer-logo"><a href="javascript:;"><img src="images/bilibili-logo.png" alt="bilibili-logo"/></a></div>
+            <div class="culture-logo"><a href="javascript:;"><img src="images/culture-logo.png" alt="culture-logo"/></a></div>
+            <div class="footer-text">
+                <p>
+                    <a href="javascript:;">游戏中心</a> |
+                    <a href="javascript:;">账号安全</a> |
+                    <a href="javascript:;">找回密码</a> |
+                    <a href="javascript:;">家长监控</a>
+                </p>
+                <p>抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+                <p>芜湖享游网络技术有限公司 | 上海宽娱数码科技有限公司 | COPYRIGHT © 2009-2017 BILIBILI ALL RIGHTS RESERVED</p>
+                <p>皖网文许字[2014]1055-002号 | 皖ICP备15002422号-2</p>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:;" class="gototop"></a>
 </body>
 </html>
